@@ -51,7 +51,6 @@ export default function Navbar() {
                     Sign Up
                 </button>
             </div>
-
         </nav>
     );
 }
