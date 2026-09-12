@@ -116,7 +116,7 @@ export default function ExploreSection({ technologiesPromise }: ExploreSectionPr
                                                 </div>
                                                 <button
                                                     onClick={() => handleRemoveFromStack(technology.id)}
-                                                    className="text-slate-400 hover:text-slate-600 transition-colors">
+                                                    className="text-slate-400 hover:text-red-600 transition-colors">
                                                     <HiXMark className="text-2xl" />
                                                 </button>
                                             </div>
