@@ -134,7 +134,7 @@
         "name": "VS Code",
         "category": "Tools",
         "description": "A lightweight and powerful source-code editor.",
-        "icon": "https://cdn.simpleicons.org/visualstudiocode",
+        "icon": "https://raw.githubusercontent.com/MicrosoftDocs/visualstudio-docs/main/docs/media/vs-code-logo.svg",
         "rating": 4.9,
         "difficulty": "Beginner-Friendly",
         "badge": "Popular"
