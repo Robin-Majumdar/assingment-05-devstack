@@ -2,6 +2,7 @@ import { use, useState } from "react"
 import type { TechnologyType } from "../../Types/TechnologyType"
 import TechCard from "../TechCard/TechCard";
 import { HiXMark } from "react-icons/hi2";
+import { toast } from 'react-toastify'
 
 export interface ExploreSectionProps {
     technologiesPromise: Promise<TechnologyType[]>
@@ -15,18 +16,24 @@ export default function ExploreSection({ technologiesPromise }: ExploreSectionPr
 
     const handleAddToStack = (technology: TechnologyType) => {
         setSelectedTechnologies([...selectedTechnologies, technology]);
+        toast.success(`${technology.name} added to your stack!`);
     };
 
     const handleRemoveFromStack = (id: number) => {
-        setSelectedTechnologies(
-            selectedTechnologies.filter(
-                (technology) => technology.id !== id
-            )
+        const technology = selectedTechnologies.find(
+            (technology) => technology.id === id
         );
+
+        setSelectedTechnologies((prevTechs) =>
+            prevTechs.filter((technology) => technology.id !== id)
+        );
+
+        toast.info(`${technology?.name} removed from your stack.`);
     };
 
     const handleRemoveAllFromStack = () => {
         setSelectedTechnologies([]);
+        toast.warning("All technologies removed from your stack.");
     };
 
     return (
