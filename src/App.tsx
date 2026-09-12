@@ -7,6 +7,7 @@ import ExploreSection from './components/ExploreSection/ExploreSection'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import Footer from './components/Footer/Footer'
+import Loading from './components/Loading/Loading'
 
 const technologyDataPromise = getTechnologyData();
 
@@ -16,7 +17,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <Suspense fallback={<p className="p-6 text-gray-500 flex items-center justify-center w-full text-center">Loading Technologies...</p>}>
+      <Suspense fallback={<Loading />}>
         <ExploreSection technologiesPromise={technologyDataPromise} />
       </Suspense>
       <Footer />
