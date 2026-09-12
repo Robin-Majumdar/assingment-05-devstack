@@ -17,6 +17,18 @@ export default function ExploreSection({ technologiesPromise }: ExploreSectionPr
         setSelectedTechnologies([...selectedTechnologies, technology]);
     };
 
+    const handleRemoveFromStack = (id: number) => {
+        setSelectedTechnologies(
+            selectedTechnologies.filter(
+                (technology) => technology.id !== id
+            )
+        );
+    };
+
+    const handleRemoveAllFromStack = () => {
+        setSelectedTechnologies([]);
+    };
+
     return (
         <section className="w-full bg-[#F8FAFC]/50 px-6 py-6 md:px-12 lg:px-24">
             <div className="mx-auto max-w-7xl">
@@ -41,11 +53,13 @@ export default function ExploreSection({ technologiesPromise }: ExploreSectionPr
                                         key={technology.id}
                                         technology={technology}
                                         addToStack={handleAddToStack}
+                                        selectedTechnologies={selectedTechnologies}
                                     >
                                     </TechCard>))
                             }
                         </div>
                     </div>
+
                     <div className="lg:col-span-1">
                         <div className="sticky top-6 rounded-2xl border border-slate-100 bg-white p-6 shadow-xs">
 
@@ -59,7 +73,7 @@ export default function ExploreSection({ technologiesPromise }: ExploreSectionPr
 
                             {
                                 selectedTechnologies.length === 0 ? (
-                                    <div className="mt-6 flex h-32 items-center justify-center rounded-xl border border-dashed border-slate-200 p-4 text-center">
+                                    <div className="mt-6 flex h-24 items-center justify-center rounded-xl border border-dashed border-slate-200 p-4 text-center">
                                         <span className="text-xs text-slate-400">
                                             Your stack is empty.
                                         </span>
@@ -67,8 +81,7 @@ export default function ExploreSection({ technologiesPromise }: ExploreSectionPr
                                 ) : (
                                     <div className="mt-6 flex flex-col gap-3">
                                         {selectedTechnologies.map((technology) => (
-                                            <div
-                                                key={technology.id}
+                                            <div key={technology.id}
                                                 className="flex items-center justify-between rounded-xl border border-slate-200 p-3"
                                             >
                                                 <div className="flex items-center gap-3">
@@ -92,7 +105,9 @@ export default function ExploreSection({ technologiesPromise }: ExploreSectionPr
                                                     </div>
 
                                                 </div>
-                                                <button className="text-slate-400 hover:text-slate-600 transition-colors">
+                                                <button
+                                                    onClick={() => handleRemoveFromStack(technology.id)}
+                                                    className="text-slate-400 hover:text-slate-600 transition-colors">
                                                     <HiXMark className="text-2xl" />
                                                 </button>
                                             </div>
@@ -100,6 +115,15 @@ export default function ExploreSection({ technologiesPromise }: ExploreSectionPr
                                     </div>
                                 )
                             }
+
+                            {selectedTechnologies.length > 0 && (
+                                <button
+                                    onClick={handleRemoveAllFromStack}
+                                    className="mt-4 w-full rounded-xl border border-red-100 bg-red-50 py-2.5 text-xs font-semibold text-red-600 transition-all duration-200 hover:bg-red-100"
+                                >
+                                    Remove All
+                                </button>
+                            )}
                         </div>
                     </div>
                 </div>

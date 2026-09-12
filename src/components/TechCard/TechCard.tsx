@@ -1,15 +1,23 @@
 import { FaStar } from "react-icons/fa";
 import type { TechnologyType } from "../../Types/TechnologyType"
+import { HiCheck } from "react-icons/hi";
 
 export interface TechCardProps {
     technology: TechnologyType;
     addToStack: (technology: TechnologyType) => void;
+    selectedTechnologies: TechnologyType[];
+
 }
 
-export default function TechCard({ technology, addToStack }: TechCardProps) {
+export default function TechCard({ technology, addToStack, selectedTechnologies }: TechCardProps) {
+
+    const isAdded = selectedTechnologies.some((item) => item.id === technology.id)
 
     return (
-        <div className="flex h-full flex-col justify-between rounded-2xl border border-slate-100 bg-white p-6 shadow-xs transition-all duration-200 hover:shadow-md">
+        <div className={`flex h-full flex-col justify-between rounded-2xl border bg-white p-6 shadow-xs transition-all duration-200 hover:shadow-md ${isAdded
+                ? "border-red-200"
+                : "border-slate-100"
+            }`}>
             <div>
                 <div className="flex items-center justify-between">
                     <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-slate-50 p-2">
@@ -38,8 +46,20 @@ export default function TechCard({ technology, addToStack }: TechCardProps) {
 
                 <button
                     onClick={() => addToStack(technology)}
-                    className="mt-4 w-full cursor-pointer rounded-xl bg-slate-900 py-2.5 text-xs font-semibold text-white transition-all duration-200 hover:bg-slate-800">
-                    Add to Stack
+                    disabled={isAdded}
+                    className={`mt-4 flex w-full items-center justify-center gap-1.5 rounded-xl py-2.5 text-xs font-semibold transition-all duration-200 ${isAdded
+                        ? "cursor-not-allowed bg-red-50 text-red-600 ring-1 ring-red-100"
+                        : "cursor-pointer bg-slate-900 text-white hover:bg-slate-800"
+                        }`}
+                >
+                    {isAdded ? (
+                        <>
+                            <HiCheck className="text-base" />
+                            <span>Added to Stack</span>
+                        </>
+                    ) : (
+                        "Add to Stack"
+                    )}
                 </button>
             </div>
         </div>
