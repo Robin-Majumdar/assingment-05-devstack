@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1,
+        "name": "React",
+        "category": "Frontend",
+        "description": "A popular JavaScript library for building modern user interfaces.",
+        "icon": "https://cdn.simpleicons.org/react",
+        "rating": 4.8,
+        "difficulty": "Intermediate",
+        "badge": "Popular"
+    },
+    {
+        "id": 2,
+        "name": "Next.js",
+        "category": "Frontend",
+        "description": "A React framework for building fast and scalable web applications.",
+        "icon": "https://cdn.simpleicons.org/nextdotjs",
+        "rating": 4.7,
+        "difficulty": "Intermediate",
+        "badge": "Fast"
+    },
+    {
+        "id": 3,
+        "name": "Node.js",
+        "category": "Backend",
+        "description": "A JavaScript runtime used to build scalable backend applications.",
+        "icon": "https://cdn.simpleicons.org/nodedotjs",
+        "rating": 4.8,
+        "difficulty": "Intermediate",
+        "badge": "Essential"
+    },
+    {
+        "id": 4,
+        "name": "Express.js",
+        "category": "Backend",
+        "description": "A lightweight Node.js framework for creating APIs and web servers.",
+        "icon": "https://cdn.simpleicons.org/express",
+        "rating": 4.6,
+        "difficulty": "Beginner-Friendly",
+        "badge": "Popular"
+    },
+    {
+        "id": 5,
+        "name": "MongoDB",
+        "category": "Database",
+        "description": "A NoSQL database designed for flexible and scalable applications.",
+        "icon": "https://cdn.simpleicons.org/mongodb",
+        "rating": 4.7,
+        "difficulty": "Beginner-Friendly",
+        "badge": "Flexible"
+    },
+    {
+        "id": 6,
+        "name": "PostgreSQL",
+        "category": "Database",
+        "description": "A powerful open-source relational database system.",
+        "icon": "https://cdn.simpleicons.org/postgresql",
+        "rating": 4.9,
+        "difficulty": "Intermediate",
+        "badge": "Powerful"
+    },
+    {
+        "id": 7,
+        "name": "JavaScript",
+        "category": "Language",
+        "description": "A versatile programming language widely used for web development.",
+        "icon": "https://cdn.simpleicons.org/javascript",
+        "rating": 4.9,
+        "difficulty": "Beginner-Friendly",
+        "badge": "Essential"
+    },
+    {
+        "id": 8,
+        "name": "TypeScript",
+        "category": "Language",
+        "description": "A strongly typed programming language built on top of JavaScript.",
+        "icon": "https://cdn.simpleicons.org/typescript",
+        "rating": 4.9,
+        "difficulty": "Intermediate",
+        "badge": "Popular"
+    },
+    {
+        "id": 9,
+        "name": "Tailwind CSS",
+        "category": "Styling",
+        "description": "A utility-first CSS framework for quickly building custom designs.",
+        "icon": "https://cdn.simpleicons.org/tailwindcss",
+        "rating": 4.8,
+        "difficulty": "Beginner-Friendly",
+        "badge": "Fast"
+    },
+    {
+        "id": 10,
+        "name": "Sass",
+        "category": "Styling",
+        "description": "A CSS preprocessor that adds variables, nesting, and reusable styles.",
+        "icon": "https://cdn.simpleicons.org/sass",
+        "rating": 4.5,
+        "difficulty": "Beginner-Friendly",
+        "badge": "Essential"
+    },
+    {
+        "id": 11,
+        "name": "Docker",
+        "category": "DevOps",
+        "description": "A platform for packaging and running applications in containers.",
+        "icon": "https://cdn.simpleicons.org/docker",
+        "rating": 4.8,
+        "difficulty": "Advanced",
+        "badge": "Containers"
+    },
+    {
+        "id": 12,
+        "name": "GitHub Actions",
+        "category": "DevOps",
+        "description": "A CI/CD platform for automating development and deployment workflows.",
+        "icon": "https://cdn.simpleicons.org/githubactions",
+        "rating": 4.7,
+        "difficulty": "Intermediate",
+        "badge": "Automation"
+    },
+    {
+        "id": 13,
+        "name": "Git",
+        "category": "Tools",
+        "description": "A distributed version control system for tracking code changes.",
+        "icon": "https://cdn.simpleicons.org/git",
+        "rating": 4.9,
+        "difficulty": "Beginner-Friendly",
+        "badge": "Essential"
+    },
+    {
+        "id": 14,
+        "name": "VS Code",
+        "category": "Tools",
+        "description": "A lightweight and powerful source-code editor.",
+        "icon": "https://cdn.simpleicons.org/visualstudiocode",
+        "rating": 4.9,
+        "difficulty": "Beginner-Friendly",
+        "badge": "Popular"
+    },
+    {
+        "id": 15,
+        "name": "Postman",
+        "category": "Tools",
+        "description": "A popular tool for developing, testing, and documenting APIs.",
+        "icon": "https://cdn.simpleicons.org/postman",
+        "rating": 4.7,
+        "difficulty": "Beginner-Friendly",
+        "badge": "Essential"
+    }
+]
