@@ -68,7 +68,9 @@ export default function ExploreSection({ technologiesPromise }: ExploreSectionPr
                             </h3>
 
                             <p className="mt-1 text-xs text-slate-400">
-                                No technologies selected yet.
+                                {selectedTechnologies.length > 0
+                                    ? `${selectedTechnologies.length} Technology Selected`
+                                    : "No technologies selected yet."}
                             </p>
 
                             {
