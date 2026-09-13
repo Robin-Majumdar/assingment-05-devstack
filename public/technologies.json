@@ -7,7 +7,11 @@
         "icon": "https://cdn.simpleicons.org/react",
         "rating": 4.8,
         "difficulty": "Intermediate",
-        "badge": "Popular"
+        "badge": "Popular",
+        "badgeColor": {
+            "bg": "#ecfeff",
+            "text": "#0891b2"
+        }
     },
     {
         "id": 2,
@@ -17,7 +21,11 @@
         "icon": "https://cdn.simpleicons.org/nextdotjs",
         "rating": 4.7,
         "difficulty": "Intermediate",
-        "badge": "Fast"
+        "badge": "Fast",
+        "badgeColor": {
+            "bg": "#f1f5f9",
+            "text": "#334155"
+        }
     },
     {
         "id": 3,
@@ -27,7 +35,11 @@
         "icon": "https://cdn.simpleicons.org/nodedotjs",
         "rating": 4.8,
         "difficulty": "Intermediate",
-        "badge": "Essential"
+        "badge": "Essential",
+        "badgeColor": {
+            "bg": "#f0fdf4",
+            "text": "#15803d"
+        }
     },
     {
         "id": 4,
@@ -37,7 +49,11 @@
         "icon": "https://cdn.simpleicons.org/express",
         "rating": 4.6,
         "difficulty": "Beginner-Friendly",
-        "badge": "Popular"
+        "badge": "Popular",
+        "badgeColor": {
+            "bg": "#f1f5f9",
+            "text": "#334155"
+        }
     },
     {
         "id": 5,
@@ -47,7 +63,11 @@
         "icon": "https://cdn.simpleicons.org/mongodb",
         "rating": 4.7,
         "difficulty": "Beginner-Friendly",
-        "badge": "Flexible"
+        "badge": "Flexible",
+        "badgeColor": {
+            "bg": "#f0fdf4",
+            "text": "#15803d"
+        }
     },
     {
         "id": 6,
@@ -57,7 +77,11 @@
         "icon": "https://cdn.simpleicons.org/postgresql",
         "rating": 4.9,
         "difficulty": "Intermediate",
-        "badge": "Powerful"
+        "badge": "Powerful",
+        "badgeColor": {
+            "bg": "#eff6ff",
+            "text": "#1d4ed8"
+        }
     },
     {
         "id": 7,
@@ -67,7 +91,11 @@
         "icon": "https://cdn.simpleicons.org/javascript",
         "rating": 4.9,
         "difficulty": "Beginner-Friendly",
-        "badge": "Essential"
+        "badge": "Essential",
+        "badgeColor": {
+            "bg": "#fefce8",
+            "text": "#a16207"
+        }
     },
     {
         "id": 8,
@@ -77,7 +105,11 @@
         "icon": "https://cdn.simpleicons.org/typescript",
         "rating": 4.9,
         "difficulty": "Intermediate",
-        "badge": "Popular"
+        "badge": "Popular",
+        "badgeColor": {
+            "bg": "#eff6ff",
+            "text": "#2563eb"
+        }
     },
     {
         "id": 9,
@@ -87,7 +119,11 @@
         "icon": "https://cdn.simpleicons.org/tailwindcss",
         "rating": 4.8,
         "difficulty": "Beginner-Friendly",
-        "badge": "Fast"
+        "badge": "Fast",
+        "badgeColor": {
+            "bg": "#ecfeff",
+            "text": "#0891b2"
+        }
     },
     {
         "id": 10,
@@ -97,7 +133,11 @@
         "icon": "https://cdn.simpleicons.org/sass",
         "rating": 4.5,
         "difficulty": "Beginner-Friendly",
-        "badge": "Essential"
+        "badge": "Essential",
+        "badgeColor": {
+            "bg": "#fdf2f8",
+            "text": "#be185d"
+        }
     },
     {
         "id": 11,
@@ -107,7 +147,11 @@
         "icon": "https://cdn.simpleicons.org/docker",
         "rating": 4.8,
         "difficulty": "Advanced",
-        "badge": "Containers"
+        "badge": "Containers",
+        "badgeColor": {
+            "bg": "#eff6ff",
+            "text": "#2563eb"
+        }
     },
     {
         "id": 12,
@@ -117,7 +161,11 @@
         "icon": "https://cdn.simpleicons.org/githubactions",
         "rating": 4.7,
         "difficulty": "Intermediate",
-        "badge": "Automation"
+        "badge": "Automation",
+        "badgeColor": {
+            "bg": "#f1f5f9",
+            "text": "#334155"
+        }
     },
     {
         "id": 13,
@@ -127,7 +175,11 @@
         "icon": "https://cdn.simpleicons.org/git",
         "rating": 4.9,
         "difficulty": "Beginner-Friendly",
-        "badge": "Essential"
+        "badge": "Essential",
+        "badgeColor": {
+            "bg": "#fff7ed",
+            "text": "#c2410c"
+        }
     },
     {
         "id": 14,
@@ -137,7 +189,11 @@
         "icon": "https://raw.githubusercontent.com/MicrosoftDocs/visualstudio-docs/main/docs/media/vs-code-logo.svg",
         "rating": 4.9,
         "difficulty": "Beginner-Friendly",
-        "badge": "Popular"
+        "badge": "Popular",
+        "badgeColor": {
+            "bg": "#eff6ff",
+            "text": "#2563eb"
+        }
     },
     {
         "id": 15,
@@ -147,6 +203,10 @@
         "icon": "https://cdn.simpleicons.org/postman",
         "rating": 4.7,
         "difficulty": "Beginner-Friendly",
-        "badge": "Essential"
+        "badge": "Essential",
+        "badgeColor": {
+            "bg": "#fff7ed",
+            "text": "#ea580c"
+        }
     }
 ]
